@@ -1,0 +1,126 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 40px;
+    position: relative;
+    overflow: hidden;
+    width: 50vw;
+    min-height: 400px;
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    transition: all 0.6s ease-in-out;
+}
+
+.left-box, .right-box {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 30px;
+    transition: all 0.6s ease-in-out;
+}
+
+.left-box {
+    background-color: blueviolet;
+    color: #fff;
+    transform: translateX(0%);
+}
+
+.right-box {
+    background-color: #fff;
+    transform: translateX(0%);
+}
+
+.left-box {
+    background-color: #fff;
+    color: rgb(58, 4, 108);
+    transform: translateX(0%);
+}
+
+.right-box {
+    background-color: #fff;
+    transform: translateX(0%);
+}
+
+
+.content.active .left-box {
+    transform: translateX(100%);
+}
+
+.content.active .right-box {
+    transform: translateX(-100%);
+}
+
+.header-text h1 {
+    color: inherit;
+}
+
+input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
+
+
+button {
+    background-color: violet;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: rgb(58, 4, 108);
+}
+
+.switch-content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: blueviolet;
+    color: #fff;
+    transition: all 0.6s ease-in-out;
+    z-index: 10;
+}
+
+.content.active .switch-con0ktent {
+    left: 0;
+    right: auto;
+}
+
+/* .switch-content h1, */
+.switch-content p {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.switch-content button {
+    margin-top: 20px;
+}
