@@ -1,6 +1,12 @@
+:root {
+	--primary: #0091ff;
+	--dark: #061b28;
+	--gray: #756388;
+	--light: #ffffff;
+}
 body {
     font-family: Poppins, sans-serif;
-    background-color: #f1f1f1;
+    background-color: var(--light);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -10,11 +16,11 @@ body {
 }
 
 .content {
-    background-color: #fff;
+    background-color: var(--light);
     border-radius: 40px;
     position: relative;
     overflow: hidden;
-    width: 50vw;
+    width: 70vw;
     min-height: 400px;
     max-width: 100%;
     display: flex;
@@ -33,24 +39,24 @@ body {
 }
 
 .left-box {
-    background-color: blueviolet;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--light);
     transform: translateX(0%);
 }
 
 .right-box {
-    background-color: #fff;
+    background-color: var(--light);
     transform: translateX(0%);
 }
 
 .left-box {
-    background-color: #fff;
+    background-color: var(--light);
     color: rgb(58, 4, 108);
     transform: translateX(0%);
 }
 
 .right-box {
-    background-color: #fff;
+    background-color:var(--light);
     transform: translateX(0%);
 }
 
@@ -72,15 +78,15 @@ input {
     margin-bottom: 20px;
     padding: 12px 15px;
     font-size: 16px;
-    border: 1px solid #ccc;
+    border: 1px solid var(--gray);
     border-radius: 4px;
     outline: none;
 }
 
 
 button {
-    background-color: violet;
-    color: #fff;
+    background-color: var(--primary);
+    color: var(--light);
     padding: 10px 20px;
     border: none;
     font-weight: bold;
@@ -91,7 +97,22 @@ button {
 }
 
 button:hover {
-    background-color: rgb(58, 4, 108);
+    background-color: var(--primary);
+}
+.remember-me{
+    display: flex;
+    width: 35%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.remember-me input{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0%;
 }
 
 .switch-content {
@@ -104,8 +125,8 @@ button:hover {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: blueviolet;
-    color: #fff;
+    background-color: var(--dark);
+    color: var(--light);
     transition: all 0.6s ease-in-out;
     z-index: 10;
 }

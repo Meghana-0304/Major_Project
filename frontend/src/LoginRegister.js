@@ -107,7 +107,7 @@ function LoginRegister() {
                             onChange={e => setPassword(e.target.value)} 
                         />
                         <div className="d-flex justify-content-between mb-3">
-                            <div>
+                            <div className="remember-me">
                                 <input type="checkbox" />
                                 <label className="ms-2">Remember Me</label>
                             </div>
