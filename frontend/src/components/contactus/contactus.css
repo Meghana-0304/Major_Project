@@ -15,6 +15,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    max-width: 100%;
 }
 
 .contactus-page h1 {
@@ -41,7 +42,8 @@ body {
     margin: 0%;
     overflow: hidden;
     background-color: var(--light);
-    border: solid 3px var(--dark);   
+    border: solid 3px var(--dark);  
+    padding: 0px 30px 0px 30px; 
 }
 
 /* Left section: Image styling */
@@ -68,7 +70,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 70%;
 }
 .form-group{
     display: flex;
@@ -85,16 +87,16 @@ body {
     border-radius: 20px;
     font-size: 15px;
     padding:10px;
-    width: 100%;
-    max-width: 150%;
+    width: 150%;
+    max-width: 180%;
 }
 .form-group textarea{
     border: solid 2px var(--dark);
     border-radius: 20px;
     font-size: 15px;
     padding: 10px;
-    width: 100%;
-    max-width: 150%;
+    width: 150%;
+    max-width: 180%;
 }
 .submit-button{
     width: 50%;
@@ -111,5 +113,5 @@ body {
 .error-message{
     font-size: 0.7rem;
     margin: 0%;
-    width: 70%;
+    width: 100%;
 }

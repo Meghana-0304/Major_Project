@@ -1,0 +1,7 @@
+.notification-overlay{
+    width: 50vw;
+    height: 100vh;
+    border: solid 2px red;
+    position: fixed;
+    background-color: black;
+}

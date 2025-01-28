@@ -21,6 +21,7 @@
 .nav-footer {
     /* border: 2px solid white; */
     display: grid;
+    width: auto;
 }
 
 .nav-heading {
@@ -36,7 +37,6 @@
 
 .nav-brand img {
     width: 230px;
-    padding: 0 10px;
 }
 
 .hamburger {
@@ -53,9 +53,9 @@
     border-radius: 15px;
     height: 5px;
     width: 35px;
-
     transition: 0.4s;
 }
+
 
 .hamburger:hover span {
     background-color: var(--primary);
@@ -75,8 +75,8 @@
     transform: translateY(-4px) rotate(25deg);
 }
 
-.hamburger-out {
-    margin-left: 24px;
+.hamburger-out{
+    margin-left: 20px;
 }
 
 .hamburger-out:hover span:nth-child(1) {
@@ -96,6 +96,7 @@
 .nav-menu {
     grid-template-rows: repeat(7, 1fr);
     margin-top: 20px;
+    gap: 3px;
 }
 
 .menu-item {
@@ -121,35 +122,37 @@
     padding: 0 20px;
     color: white;
 }
+
 .profile-circle {
-	width: auto;
-	height: 30px;
+    width: auto;
+    height: 30px;
     margin-top: 13px;
-	border-radius: 100%; /* Makes the image circular */
-	object-fit: cover; /* Ensures the image fits within the circle */
+    border-radius: 100%;/* Makes the image circular */
+    object-fit: cover; /* Ensures the image fits within the circle */
 }
+
 .dropdown-menu {
-	position: absolute;
-	background-color: #ffffff;
-	box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.5);
-	padding: 10px;
-	border-radius: 5px;
-	margin-top: 10px;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0.5, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
     margin-left: 160px;
-    outline-color: var(--dark);
-    outline-width: 2px;
-    outline-style: solid;
+    border: solid 2px var(--dark);
+    z-index: 999;
 }
+
 .dropdown-menu a {
-	display: block;
-	text-decoration: none;
-	color:black;
-	padding: 5px 10px;
-	border-radius: 4px;
-	transition: background-color 0.2s ease;
+    display: block;
+    text-decoration: none;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease;
 }
 
 .dropdown-menu a:hover {
-	background-color:var(--dark);
+    background-color: var(--dark);
     color: white;
 }
